@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family: Ubuntu;
+    font-weight:bold;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    height:100vh;
+    width: 100vw;
+    background-image: url("./assets/redbwallpaper.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    height:100vh;
+    width: 100vw;
+}
+
+#quiz{
+    display: flex;
+}
+
+body .questionSide{
+    width:50%;
+    background-color: white;
+}
+
+
+body .optionSide{
+    display: flex;
+    width:50%;
+    background-color: whitesmoke;
+}
+
+body .questionSide .questionCont{
+    width: 50%;
+    position: absolute;
+    top:36%;
+    transform: translate(-50%,-50%);
+    left:32%;
+    height:50vh;
+}
+
+.questionCont header{
+    width:fit-content;
+    font-size:20px;
+    color:grey;
+    margin-bottom: 20px;
+    margin-left: 0;
+    border:none;
+}
+
+.questionCont .question{
+    overflow-wrap:break-word;
+    width: 70%;
+    text-wrap:initial;
+    font-size: 50px;
+    margin-bottom:40px;
+}
+
+#timer{
+    margin-left:-10px;
+    font-size:60px;
+    color: grey;
+}
+
+.options{
+    margin-top:auto;
+    margin-bottom: auto;
+    width: 100vw;
+    height: fit-content;
+    
+}
+
+.guessbox{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    margin:10px;
+    width: 50%;
+    height: 23vh;
+    background-color: white;
+    border-radius: 15px;
+    border:none;
+    font-size:4vh;
+    font-weight: bold;
+    color:rgb(231, 40, 40);
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color:rgb(231, 40, 40) ;
+    color:white;
+    transition: 0.2s ease-in-out;
+    transition-delay: 80ms;
+    cursor:pointer;
+}
+
+#endScreen{
+    opacity: 0;
+    width:0px;
+    height: 50vh;
+    border-radius: 15px;
+    /* position:absolute; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:none;
+}
+
+#endScreen h1,h2{
+    display: inline-block;
+}
+
+#endScreen h1{
+    font-size:30px;
+    margin: 0;
+    margin-bottom:10px;
+}
+
+#endScreen h2{
+    font-size:20px;
+}
+
+#endScreen #restart{
+    margin-top: 10px;
+    width:250px;
+    height:70px;
+    border-color:rgb(231, 40, 40);
+    border-radius: 15px;
+    font-size: 27px;
+    color:rgb(231, 40, 40);
+    font-weight: bold;
+    background-color: white;
+    transition:0.2s ease-in-out;
+}
+
+#endScreen #restart:hover{
+    background-color: rgb(231, 40, 40);
+    color:white;
+    cursor:pointer;
+    transition:0.2s ease-in-out;
+}
+
+#quiz #return{
+    position: absolute;
+    width:40px;
+    height:40px;
+    left:10px;
+    top:10px;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgb(231, 40, 40);
+    color:white;
+    border:1px solid red;
+    transition: 0.2s ease-in-out;
+}
+
+#quiz #return:hover{
+    cursor: pointer;
+    background-color: white;
+    color:red;
+    transition: 0.2s ease-in-out;
+}
+
+#progress-bar{
+    height:6px;
+    width:100vw;
+    left:-100vw;
+    background-color: rgb(236, 0, 0);
+    position: absolute;
+    transition: 0.4s ease-in-out;
+}
+
+#progree{
+    margin-left: 0;
+}
